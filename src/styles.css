@@ -1,0 +1,277 @@
+:root {
+    --rolet-yellow: #efa80f;
+    --rolet-green: #3c4f1b;
+    --rolet-red: #c14428;
+    --rolet-blue: #284f79;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.arrow {
+    position: relative;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    transform: rotate(270deg);
+}
+
+.arrow img {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.paretnContainer {
+    border: #c14428 2px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner1 {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 15px solid #dde;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.one {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 68%);
+    background-color: var(--rolet-green);
+
+
+}
+
+.two {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 100%, 100% 100%, 100% 68%);
+    background-color: var(--rolet-blue);
+
+
+}
+
+.three {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 0, 0 0, 0 68%);
+    background-color: var(--rolet-yellow);
+}
+
+.four {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 100%, 0 100%, 0 68%);
+    background-color: var(--rolet-red);
+}
+
+.modal {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 300ms;
+}
+
+.modal-window {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    opacity: 0.7;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.modalPic {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+span {
+    font-size: 3.2rem;
+}
+
+.numberOne {
+
+    position: absolute;
+    left: 83%;
+    top: 20.5%;
+    transform: rotate(55deg);
+    /* z-index: 10;    */
+
+}
+
+.numberTwo {
+    position: absolute;
+    left: 72.5%;
+    top: 78%;
+    transform: rotate(145deg);
+}
+
+.numberThree {
+    position: absolute;
+    left: 12.5%;
+    top: 20.5%;
+    transform: rotate(305deg);
+}
+
+.numberFour {
+    position: absolute;
+    left: 22%;
+    top: 80%;
+    transform: rotate(215deg);
+}
+
+.pic {
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    background-color: #ccc;
+
+}
+
+/* .pic img{
+    height:min-content;
+    width: 100%;
+} */
+.picOne {
+    position: absolute;
+    top: 17.5%;
+    left: 17.5%;
+}
+
+.picOne img {
+    position: absolute;
+    transform: rotate(55deg);
+    width: 30%;
+    height: 30%;
+    top: 23%;
+    left: 52.5%;
+}
+
+.picTwo {
+    position: absolute;
+    top: 17.5%;
+    left: 17.5%;
+}
+
+.picTwo img {
+    position: absolute;
+    transform: rotate(105deg);
+    width: 25%;
+    height: 25%;
+    top: 61%;
+    left: 50.5%;
+}
+
+.picThree {
+    position: absolute;
+    top: 17.5%;
+    left: 17.5%;
+}
+
+.picThree img {
+    position: absolute;
+    transform: rotate(305deg);
+    width: 29%;
+    height: 29%;
+    top: 25%;
+    left: 15%;
+}
+
+.picFour {
+    position: absolute;
+    top: 17.5%;
+    left: 17.5%;
+}
+
+.picFour img {
+    position: absolute;
+    transform: rotate(215deg);
+    width: 25%;
+    height: 25%;
+    top: 60%;
+    left: 15%;
+}
+
+@media (max-width: 500px) {
+    .conteiner1 {
+        height: 250px;
+        width: 250px;
+        border: 8px solid#dde;
+    }
+
+    /* span{
+        font-size: 1rem;
+    } */
+    .numberTwo {
+        top: 69%;
+    }
+
+    .numberThree { top: 14%;}
+
+    .numberFour { top: 73%;}
+
+}

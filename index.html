@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Roulette</title>
+</head>
+
+<body>
+   
+   <div class="parentContainer">
+    <div class="arrow">
+        <img src="./src/arrow.png" alt="">
+    </div>
+    <div class="conteiner1" id="container">   
+        <div class="one">
+            <span class="numberOne">2</span>
+            <div class="picOne pic">
+               <img src="./src/skull.png" alt="Skull">               
+            </div>
+        </div>
+        <div class="two">
+            <span class="numberTwo">3</span>
+            <div class="picTwo pic">
+                <img src="./src/axe.png" alt="Axe">
+            </div>
+        </div>
+        <div class="three">
+            <span class="numberThree">1</span>
+            <div class="picThree pic">
+                <img src="./src/run.png" alt="Run">
+            </div>
+        </div>
+        <div class="four">
+            <span class="numberFour">4</span>
+            <div class="picFour pic">
+                <img src="./src/gatking.png" alt="gatling">
+            </div>
+        </div>
+       </div>
+   </div>
+
+   <div class="modal" id="modal">
+    <div class="modal-window">
+        <h2 id="modalMessage"></h2>
+        <div class="modalPic">
+            <img src="" alt="img" id="modalPic">
+        </div>
+        <button class="btn-close" onclick="closeModal()">X</button>
+    </div>
+    <div class="overlay">
+
+    </div>
+   </div>
+ 
+
+    <script src="/src/rolet.js">
+
+
+    </script>
+</body>
+
+</html>
